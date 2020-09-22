@@ -4,9 +4,10 @@ import { APP_GUARD } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { authConfig, databaseConfig } from 'src/config';
 import { RolesGuard } from 'src/guards';
-import { UsersModule } from 'src/users';
-import { AuthModule } from 'src/auth';
-import { AppService, AppController } from 'src';
+import { UsersModule } from 'src/domain/users';
+import { AuthModule } from 'src/domain/auth';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [

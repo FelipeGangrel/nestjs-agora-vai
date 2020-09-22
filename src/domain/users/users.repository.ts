@@ -1,5 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
-import { PasswordHelper } from '../helpers';
+import { PasswordHelper } from 'src/helpers';
 import { CreateUserDTO, UpdateUserDTO } from './dtos';
 import { User } from './entities';
 

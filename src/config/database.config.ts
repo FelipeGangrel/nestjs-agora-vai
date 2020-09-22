@@ -9,5 +9,5 @@ export default registerAs('database', () => ({
   password: process.env.TYPEORM_PASSWORD,
   database: process.env.TYPEORM_DATABASE,
   synchronize: ['true', true].includes(process.env.TYPEORM_SYNCHRONIZE),
-  entities: [__dirname + '/../**/*.entity{.ts,.js}'],
+  entities: [__dirname + '/../domain/**/*.entity{.ts,.js}'],
 }));
